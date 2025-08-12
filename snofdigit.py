@@ -1,12 +1,9 @@
-num = int(input("Enter a number: "))
-
-# Handle negative numbers
-num = abs(num)
-
-sum_of_digits = 0
-
-while num > 0:
-    sum_of_digits += num % 10   # Get last digit and add to sum
-    num //= 10                  # Remove last digit
-
-print("Sum of digits:", sum_of_digits)
+x=int(input("Enter a Number: "))
+s=0
+while x!=0:
+    r=x%10
+    s=s+r
+    x=x//10
+    
+print(f"Sum of Digit is {s}")   
+    
